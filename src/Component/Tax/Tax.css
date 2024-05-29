@@ -1,0 +1,103 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.tax-overview-info h1{
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(135, 20, 20);
+}
+.tax-overview-info p{
+    word-spacing: 10px;
+}
+
+.tax-overview-doc h1{
+    font-weight: 500;
+    color: rgb(135, 20, 20);
+}
+
+.tax-col h2{
+    padding: 10px;
+    color: rgb(135, 20, 20);
+    font-weight: 500;
+}
+.tax-col li{
+    padding: 10px;
+    list-style-type: none;
+}
+.tax-icon{
+    color: rgb(135, 20, 20);
+}
+.tax-overview-info p{
+    word-spacing: 10px;
+    padding: 10px;
+}
+.tax-overview-info b{
+    color: rgb(135, 20, 20);
+}
+
+
+@media(min-width:320px){
+    .tax-details{
+        width: 100%;
+        margin: auto;
+    }
+    .tax-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .tax-col{
+        width: 100%;
+    }
+    .tax-para-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tax-para-col{
+        width: 100%;
+    }
+}
+@media(min-width:650px){
+    .tax-details{
+        width: 90%;
+        margin: auto;
+    }
+    .tax-list{
+        display: flex;
+    }
+    
+    .tax-col{
+        width: 50%;
+    }
+    .tax-para-row{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .tax-para-col{
+        width: 50%;
+    }
+}
+@media(min-width:1000px){
+    .tax-details{
+        width: 80%;
+        margin: auto;
+    }
+    .tax-list{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .tax-col{
+        width: 50%;
+    }
+    .tax-para-row{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .tax-para-col{
+        width: 50%;
+    }
+}

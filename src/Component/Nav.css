@@ -1,0 +1,205 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    border-spacing: border-box;
+}
+
+.nav-row{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 80px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-details{
+    width: 60%;
+    padding-top: 20px;
+}
+.nav-list{
+    display: flex;
+    justify-content:space-around;
+    list-style-type: none;
+    padding: 10px 10px;
+    color: rgb(135, 20, 20);
+    cursor: pointer;
+}
+.logo-image img{
+    cursor: pointer;
+}
+.nav-list li::after{
+    content: "";
+    height: 2px;
+    margin: 5px 0px;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    background-color: rgb(135, 20, 20);
+    transform: scale(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+.nav-list li:hover::after{
+    transform: scale(1);
+    transform-origin: left;
+}
+
+
+
+
+@media(min-width:320px){
+    .meanu-bar{
+        display: block;
+        width:40%;
+        padding-top: 15px;
+        padding-left: 30px;
+    }
+    .meanu-bar .meanu{
+        font-size: 40px;
+        margin-left: 20px;
+        color:rgb(135, 20, 20) ;
+    }
+    .nav-details{
+        display: none;
+    }
+    .logo-image img{
+        height:50px;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .logo-image{
+        width: 60%;
+    }
+    .meanu-bar .list{
+        list-style-type: none;
+    }
+    /* .meanu-bar:hover{
+        transform: transition;
+    } */
+    .meanu-bar-info{
+        width: 103%;
+        background-color: #fff;
+        position: absolute;
+        top:80px;
+        left: -10px ;
+        animation:up 1s ease-in ;
+    }
+    @keyframes up {
+        0%{
+            transform: translateX(-15%);
+        }
+        25%{
+            transform: translateX(-10%);
+        }
+        50%{
+            transform: translateX(-5%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+    
+    .meanu-bar-list{
+        width: 70%;
+       
+    }
+    .meanu-bar-list .list{
+        padding-left: 30px;
+        list-style-type: none;
+        padding-top: 30px;
+    }
+    .meanu-bar-list .list li{
+        padding: 10px;
+        color: rgb(135, 20, 20);
+    }
+    .meanu-bar-list .list li:hover{
+        background-color: rgb(135, 20, 20);
+        color: #fff;
+        width: 70%;
+    }
+    
+}
+
+@media(min-width:650px){
+    .meanu-bar{
+        display: block;
+        width: 30%;
+    }
+    .meanu-bar .meanu{
+        font-size: 80px;
+        color:rgb(135, 20, 20) ;
+        padding-bottom: 20px;
+    }
+    .nav-details{
+        display: none;
+    }
+    .logo-image img{
+        height:80px;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .logo-image{
+        width: 70%;
+    }
+    .meanu-bar .list{
+        list-style-type: none;
+        display: none;
+    }
+    .meanu-bar-info{
+        width: 102%;
+        background-color: #fff;
+        position: absolute;
+        top:80px;
+        left: -10px ;
+        animation:up 1s ease-in ;
+    }
+    @keyframes up {
+        0%{
+            transform: translateX(-15%);
+        }
+        25%{
+            transform: translateX(-10%);
+        }
+        50%{
+            transform: translateX(-5%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+    .meanu-bar-list{
+        width: 60%;
+       
+    }
+    .meanu-bar-list .list{
+        padding-left: 30px;
+        list-style-type: none;
+        padding-top: 30PX;
+    }
+    .meanu-bar-list .list li{
+        padding: 10px;
+        color: rgb(135, 20, 20);
+    }
+    .meanu-bar-list .list li:hover{
+        background-color: rgb(135, 20, 20);
+        color: #fff;
+    }
+}
+
+@media(min-width:1000px){
+    .meanu-bar{
+        display: none;
+    }
+    .nav-details{
+        display: block;
+    }
+    .logo-image img{
+        height:70px;
+        width: 80%;
+        padding-top: 20px;
+    }
+    .logo-image{
+        width: 30%;
+    }
+}

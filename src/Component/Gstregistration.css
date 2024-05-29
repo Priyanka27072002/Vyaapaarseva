@@ -1,0 +1,234 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+
+.register-form h1{
+    text-align: center;
+    padding: 20px 10px;
+    color: rgb(135, 20, 20);
+}
+.register-form label{
+    padding: 5px 20px;
+}
+.register-form input{
+    padding: 8px;
+    width: 92%;
+    margin: 10px 20px;
+}
+.register-form textarea{
+    width: 92%;
+    margin: 10px 20px;
+}
+
+.register-form-btn button{
+    padding: 8px 30px;
+    border: none;
+    background-color: rgb(135, 20, 20);
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+.register-detail h1{
+    font-size: 40px;
+    padding: 20px 10px;
+}
+.register-detail p{
+    font-size: 18px;
+    word-spacing: 10px;
+    padding: 20px 10px;
+}
+
+.gst-overview h1{
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(135, 20, 20);
+}
+.gst-overview li{
+    padding: 10px;
+    list-style-type: none;
+}
+.gst-overview-info h1{
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(135, 20, 20);
+}
+.gst-overview-info p{
+    padding: 10px;
+    word-spacing: 10px;
+}
+.gst-overview-doc{
+    padding-left: 20px;
+}
+.gst-overview-doc h1{
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(135, 20, 20);
+}
+.gst-overview-doc h2{
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(135, 20, 20);
+}
+.gst-overview-doc li{
+    padding: 5px 10px;
+    list-style-type: none;
+}
+.gst-overview-doc li .gst-icon{
+    color: rgb(135, 20, 20);
+}
+
+
+
+
+
+
+@media(min-width:320px){
+    .back{
+        background-image: url("./images/reg-back.jpg");
+        height: 130vh;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%
+    }
+    .register-form{
+        background-color: #fff;
+        width: 100%;
+        margin: 7% 10% ;
+        height: 400px;
+        border-radius: 10px;
+    }
+    .register-detail{
+        color: #fff;
+        width: 100%;
+        padding-left: 7%;
+        padding-top: 10%;
+    }
+
+    .gst-details{
+        width: 90%;
+        margin: auto;
+    }
+    .gst-overview-details{
+        width: 100%;
+    }
+    .register-form-btn{
+        text-align: center;
+        padding-top: 5px;
+    }
+    .gdt-overview-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gst-col{
+        width: 100%;
+    }
+    .gst-para-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gst-para-col{
+        width: 100%;
+    }
+}
+@media(min-width:650px){
+    .back{
+        background-image: url("./images/reg-back.jpg");
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%
+    }
+    .register-form{
+        background-color: #fff;
+        width: 100%;
+        margin: 7% 10% ;
+        height: 400px;
+        border-radius: 10px;
+    }
+    .register-detail{
+        color: #fff;
+        width: 100%;
+        padding-left: 7%;
+        padding-top: 10%;
+    }
+
+    .gst-details{
+        
+        width: 90%;
+        margin: auto;
+    }
+    .gst-overview-details{
+        width: 100%;
+    }
+    .register-form-btn{
+        text-align: center;
+        padding-top: 5px;
+    }
+    .gdt-overview-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gst-col{
+        width: 50%;
+    }
+    .gst-para-row{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .gst-para-col{
+        width: 50%;
+    }
+}
+@media(min-width:1000px){
+    .back{
+        background-image: url("./images/reg-back.jpg");
+        height: 100vh;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%
+    }
+    .register-form{
+        background-color: #fff;
+        width: 50%;
+        margin: 7% 10% ;
+        height: 400px;
+        border-radius: 10px;
+    }
+    .register-detail{
+        color: #fff;
+        width: 50%;
+        padding-left: 7%;
+        padding-top: 10%;
+    }
+
+    .gst-details{
+        width: 90%;
+        margin: auto;
+    }
+    .gst-overview-details{
+        width: 100%;
+    }
+    .register-form-btn{
+        text-align: center;
+        padding-top: 5px;
+    }
+    .gdt-overview-list{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .gst-col{
+        width: 33.33%;
+    }
+    .gst-para-row{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .gst-para-col{
+        width: 50%;
+    }
+}
